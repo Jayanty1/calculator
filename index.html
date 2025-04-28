@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Digital Calculator</title>
-  <link rel="stylesheet" href="cal.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Calculator</title>
+    <link rel="stylesheet" href="cal.css">
 </head>
 <body>
-  <h1>Calculator</h1>
-  <div class="calculator">
-    <div class="display">
-      <input type="text" id="display" readonly>
-    </div>
-    <div class="buttons">
-      <div class="numbers">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>0</button>
-        <button id="back">⌫</button>
-        <button id="clear">C</button>
-      </div>
-      <div class="operators">
-        <button>+</button>
-        <button>-</button>
-        <button>*</button>
-        <button>/</button>
-        <button id="equals">=</button>
-      </div>
-    </div>
-  </div>
+    <h1>Calculator</h1>
+    <div class="cal-container">
+        <div id="display-text"><input type="text" name="" id="display" value="000"></div>
+        <div class="button-container">
+            <div class="numbers">
+                <input type="button" name="" id="n1" value="1">
+                <input type="button" name="" id="n2" value="2">
+                <input type="button" name="" id="n3" value="3">
+                <input type="button" name="" id="n4" value="4">
+                <input type="button" name="" id="n5" value="5">
+                <input type="button" name="" id="n6" value="6">
+                <input type="button" name="" id="n7" value="7">
+                <input type="button" name="" id="n8" value="8">
+                <input type="button" name="" id="n9" value="9">
+                <input type="button" name="" id="dot" value=".">
+                <input type="button" name="" id="n0" value="0">
+                <input type="button" name="" id="back" value="<=">
+            </div>
+            <div class="symbols">
 
-  <script src="cal.js"></script>
+                <input type="button" name="" id="add" value="+">
+                <input type="button" name="" id="sub" value="-">
+                <input type="button" name="" id="mul" value="*">
+                <input type="button" name="" id="divi" value="/">
+                <input type="button" name="" id="equal" value="=">
+                <input type="button" name="" id="reset" value="C">
+            </div>
+        </div>
+    </div>
+    <script src="cal.js"></script>
 </body>
 </html>
